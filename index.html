@@ -7,27 +7,42 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
 
 <!-- Navbar (Fixed) -->
-<nav class="navbar  navbar-expand-lg  py-3 border-bottom border-secondary fixed-top">
+<nav class="navbar  navbar-expand-lg  py-3 mt-3  fixed-top">
   <div class="container d-flex justify-content-between align-items-center">
     <a class="navbar-brand text-white fw-bold" href="#">
       <img src="img/Logo_.avif" alt="Logo" width="50" class="me-2">
       BODAGHEE <span class="text-secondary">CONSULTING</span>
     </a>
-    <ul class="navbar-nav ms-auto me-3">
-      <li class="nav-item mx-2"><a class="nav-link text-white" href="#">services</a></li>
-      <li class="nav-item mx-2"><a class="nav-link text-white" href="#">about</a></li>
-      <li class="nav-item mx-2"><a class="nav-link text-white" href="#">blog</a></li>
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item mx-2"><a class="nav-link text-white" href="#service-cards">services</a></li>
+      <li class="nav-item mx-2"><a class="nav-link text-white" href="#hero-section">about</a></li>
+      <li class="nav-item mx-2"><a class="nav-link text-white" href="/blog.html">blog</a></li>
     </ul>
     <a class="btn btn-lime text-dark fw-bold" href="#">Contact Us</a>
   </div>
 </nav>
 
-<!-- Hero Section (Static) -->
-<section class="hero-section text-white">
+<style>
+  .navbar-divider {
+    height: 1px;
+    background-color: white;
+    opacity: 0.2; 
+    margin-top: 20px;
+   
+  }
+</style>
+
+
+<div class="navbar-divider"></div>
+
+
+<!-- Hero Section -->
+<section class="hero-section text-white " id="hero-section">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 pt-5">
@@ -111,7 +126,7 @@
   </div>
 </section>
 
-<section class="services-section py-5">
+<section class="services-section py-5" id="service-cards">
   <div class="container">
     <!-- Section Heading -->
     <div class="row mb-5">
@@ -127,10 +142,10 @@
     </div>
 
     <!-- Services Cards -->
-    <div class="row g-4">
+    <div class="row g-4 service-cards">
       <!-- Card 1 -->
       <div class="col-md-4">
-        <div class="service-card">
+        <div class="service-card" 
           <h5>Data Science</h5>
           <p>statistics, mathematical modeling, optimization</p>
           <div class="icon-bar bar-1"></div>
@@ -210,9 +225,127 @@
 </section>
 
 
+<div class="d-flex">
+  <!-- Left scrollable section -->
+  <div class="left-section p-5 text-dark">
+    <div class="mb-5">
+      <div class="dot mb-3"></div>
+      <h2 class="fw-bold">Solving Together</h2>
+      <p>
+        We listen to your data challenges and needs, and work with your human capital and your tech stack,
+        to offer solutions whose impacts are delivered on short, medium, and long timescales.
+      </p>
+    </div>
+
+    <div class="mb-5">
+      <div class="dot mb-3"></div>
+      <h2 class="fw-bold">ML Pipeline</h2>
+      <p>
+        Our team masters every step of the data science and ML operations (MLOps) pipeline: from data storage
+        and engineering, to data analysis and science, to the testing and deployment of training-inference models.
+      </p>
+    </div>
+
+    <div class="mb-5">
+      <div class="dot mb-3"></div>
+      <h2 class="fw-bold">Model Deployment</h2>
+      <p>
+        Solutions to your data challenges can be deployed locally with version tracking on GitHub.
+        For larger datasets, faster response times, and more security, solutions can be deployed on
+        cloud services such as AWS, Azure, or GCP.
+      </p>
+    </div>
+    <div class="mb-5">
+      <div class="dot mb-3"></div>
+      <h2 class="fw-bold">Reliable & Flexible</h2>
+      <p>
+      As your business grows, we ensure that your ML project stays reliable and flexible by employing a continuous integration and continuous development (CI/CD) framework using best practices from MLOps/DevOps.
+      </p>
+    </div>
+  </div>
+
+  <!-- Right fixed section -->
+  <div class="right-section d-flex align-items-center justify-content-center">
+    <div class="circle-graphic"></div>
+  </div>
+</div>
 
 
 
 
+
+<!-- Full-Height CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <p class="mb-4 fs-6">Ready to leverage your data for success?</p>
+    <h2 class="display-6 fw-normal">
+      Contact us for a <span class="highlight">personalized</span> strategy<br>
+      that <span class="highlight">drives</span> your business forward.
+    </h2>
+    <div class="mt-5">
+      <button class="btn btn-custom">Get Started</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="footer-section">
+  <div class="container">
+    <div class="row justify-content-between">
+      
+      <!-- Left Column -->
+      <div class="col-md-4 d-flex flex-column justify-content-between h-100">
+        <div>
+          <h4 class="mb-4">get in <span class="highlight">touch</span>.</h4>
+          <button class="btn btn-custom mb-4">Contact Us</button>
+          <p class="mb-1">Rue Juste Olivier 9</p>
+          <p class="mb-5">Nyon 1260 (VD), CH</p>
+        </div>
+        <div>
+          <p class="small-text mb-0">© Bodaghee Consulting. All Rights Reserved.</p>
+          <p class="small-text">Website Created by SKS Creative.</p>
+        </div>
+      </div>
+
+      <!-- Center Column -->
+      <div class="col-md-3 d-flex flex-column justify-content-end h-100">
+        <div>
+          <h6 class="text-white " >inquiries</h6>
+          <p class="mb-1 "><a href="mailto:data@bodaghee.com">data@bodaghee.com</a></p>
+          <p>41 (0)76 629 14 93</p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-3 d-flex flex-column justify-content-between h-100 align-items-md-end">
+        <div>
+          <h6 class="text-white">links</h6>
+          <p class="mb-1"><a href="#">services</a></p>
+          <p class="mb-1"><a href="#">about</a></p>
+          <p class="mb-1"><a href="#">blog</a></p>
+        </div>
+        <div class="mt-5">
+          <p class="small-text mb-1"><a href="#">cookie policy</a></p>
+          <p class="small-text"><a href="#">privacy policy</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
