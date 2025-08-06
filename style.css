@@ -13,6 +13,15 @@
   padding-top: 80px;
 }
 
+.navbar{
+  background-color: #060418;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* padding: 10px 20px; */
+} 
+
 
 
 .btn-lime {
@@ -234,13 +243,6 @@
   border-radius: 50%;
 }
 
-.circle-graphic {
-  width: 300px;
-  height: 300px;
-  background: url('img/download\ \(1\).png') no-repeat center center;
-  background-size: contain;
-}
-
 
  .cta-section {
     background-color: #08071b;
@@ -334,5 +336,25 @@
     }
   }
 
+
+
+
+  .contact-section {
+  min-height: 40vh;
+  background-color: #05051e;
+  color: white;
+}
+
+.sectionImages{
+  height: 100%;
+  width: 600px;
+}
+.scrollingSection{
+  height: 1200p;
+}
+.textbg{
+  background-color: #d5f416;
+  
+  }
  
  
